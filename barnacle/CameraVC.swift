@@ -73,10 +73,16 @@ class CameraVC: UIViewController {
     @objc func didTapCameraView() {
         
         let settings = AVCapturePhotoSettings()
+        
+        // previewPixelType and format changes in xcode 9 beta 4
+        // to refactor for beta 4, remove following two lines
         let previewPixelType = settings.availablePreviewPhotoPixelFormatTypes.first!
         let previewFormat = [kCVPixelBufferPixelFormatTypeKey as String: previewPixelType, kCVPixelBufferWidthKey as String: 160, kCVPixelBufferHeightKey as String: 160]
         
+        // refactor continue, change the value of the following line
+        // settings.previewPhotoFormat = settings.embeddedThumbnailPhotoFormat
         settings.previewPhotoFormat = previewFormat
+        
         cameraOutput.capturePhoto(with: settings, delegate: self)
     }
 }
