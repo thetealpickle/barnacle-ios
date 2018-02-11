@@ -6,7 +6,7 @@ Barnacle was created as a way to explore accessibility and machine learning. How
 
 ## what is machine learning
 
-Machine Learning is giving a computer the ability to think and learn without being explicitly programming.
+Machine Learning is giving a computer the ability to think and learn without being explicitly programmed.
 
 ## installation
 
@@ -15,5 +15,5 @@ Feel free to pull and run the project.<br>
 The project must be run on a physical iOS device. Make sure your sound is turned on to take advantage of the spoken aspect of the app.
 
 #### Not tech savy? That's OK
-You can submit your email to this form and you will be added to a testing list. Further instructions on how to get the app on your device will be emailed..
+You can submit your email to [this form](https://goo.gl/forms/otYV4Xt3NlvrUuVn2) and you will be added to a testing list. Further instructions on how to get the app on your device will be emailed..
 
