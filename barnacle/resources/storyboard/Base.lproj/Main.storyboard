@@ -77,6 +77,9 @@
                                     <action selector="flashButtonPress:" destination="blz-DI-iK4" eventType="touchUpInside" id="xMZ-7a-Zzf"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="EgW-1e-7Ub">
+                                <rect key="frame" x="339" y="589" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -93,8 +96,10 @@
                             <constraint firstItem="PwT-gt-IhK" firstAttribute="leading" secondItem="NMs-p2-JJU" secondAttribute="leading" id="Wev-C4-csZ"/>
                             <constraint firstItem="PwT-gt-IhK" firstAttribute="top" secondItem="knH-I0-bzW" secondAttribute="top" id="aqM-hC-RbH"/>
                             <constraint firstItem="6yE-A9-hPj" firstAttribute="leading" secondItem="NMs-p2-JJU" secondAttribute="leading" constant="20" id="euS-G7-5IE"/>
+                            <constraint firstItem="EgW-1e-7Ub" firstAttribute="centerY" secondItem="KBm-wt-jwo" secondAttribute="centerY" id="jlt-t8-J5V"/>
                             <constraint firstItem="NMs-p2-JJU" firstAttribute="trailing" secondItem="luH-4w-vZy" secondAttribute="trailing" constant="20" id="kIe-fc-6vN"/>
                             <constraint firstItem="PwT-gt-IhK" firstAttribute="trailing" secondItem="NMs-p2-JJU" secondAttribute="trailing" id="mEA-Dd-6ob"/>
+                            <constraint firstItem="EgW-1e-7Ub" firstAttribute="centerX" secondItem="KBm-wt-jwo" secondAttribute="centerX" id="ztN-S2-wY5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NMs-p2-JJU"/>
                     </view>
@@ -105,6 +110,7 @@
                         <outlet property="flashButton" destination="luH-4w-vZy" id="Dxu-kh-9hg"/>
                         <outlet property="identificationLabel" destination="aw1-cf-dGw" id="gKo-CG-XbT"/>
                         <outlet property="roundedLabelView" destination="6yE-A9-hPj" id="f0t-BE-1aV"/>
+                        <outlet property="spinner" destination="EgW-1e-7Ub" id="GFW-0N-P8W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GdO-2z-IOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
