@@ -35,19 +35,19 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yE-A9-hPj" customClass="RoundedShadowView" customModule="barnacle" customModuleProvider="target">
-                                <rect key="frame" x="20" y="50" width="374" height="52"/>
+                                <rect key="frame" x="20" y="50" width="374" height="55"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CvN-xI-6lY">
-                                        <rect key="frame" x="8" y="8" width="358" height="36"/>
+                                        <rect key="frame" x="8" y="8" width="358" height="39"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The names of items captured will appear here." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="aw1-cf-dGw">
-                                                <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333332"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The names of items captured will appear here." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="aw1-cf-dGw">
+                                                <rect key="frame" x="0.0" y="0.0" width="358" height="23.333333333333332"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="0.44705882349999998" green="0.7843137255" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="confidence level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0a-gX-76w">
-                                                <rect key="frame" x="0.0" y="20.333333333333329" width="358" height="15.666666666666664"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="confidence level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0a-gX-76w">
+                                                <rect key="frame" x="0.0" y="23.333333333333329" width="358" height="15.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -59,6 +59,7 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="CvN-xI-6lY" secondAttribute="bottom" constant="8" id="CEo-Ff-oSk"/>
                                     <constraint firstItem="CvN-xI-6lY" firstAttribute="top" secondItem="6yE-A9-hPj" secondAttribute="top" constant="8" id="Iha-VZ-Umg"/>
+                                    <constraint firstAttribute="height" constant="55" id="kMl-sU-1Df"/>
                                     <constraint firstItem="CvN-xI-6lY" firstAttribute="leading" secondItem="6yE-A9-hPj" secondAttribute="leading" constant="8" id="rJ9-1o-i2t"/>
                                     <constraint firstAttribute="trailing" secondItem="CvN-xI-6lY" secondAttribute="trailing" constant="8" id="sI6-Wa-LL5"/>
                                 </constraints>
@@ -115,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GdO-2z-IOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818.39999999999998" y="149.77511244377811"/>
+            <point key="canvasLocation" x="817.39130434782612" y="149.18478260869566"/>
         </scene>
     </scenes>
 </document>
