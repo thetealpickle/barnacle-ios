@@ -4,11 +4,11 @@
 Barnacle allows users to explore their area the way a computer sees. Users take pictures of things in their area which are immediately interpreted and spoken out loud by their device.<br><br>
 Barnacle was created as a way to explore accessibility and machine learning. How can machine learning be an assistive technology?  
 
-## what is machine learning
+## Background
 
 Machine Learning is giving a computer the ability to think and learn without being explicitly programmed.
 
-## installation
+## Getting Started
 
 #### Familiar with repo cloning and xcode?
 Feel free to pull and run the project.<br>
