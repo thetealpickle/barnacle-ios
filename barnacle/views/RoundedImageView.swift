@@ -1,10 +1,5 @@
-//
-//  RoundedImageView.swift
-//  barnacle
-//
-//  Created by bald on 2/10/18.
+//  Created by Jessica Joseph on 2/10/18.
 //  Copyright © 2018 B0RN BKLYN Inc. All rights reserved.
-//
 
 import UIKit
 
