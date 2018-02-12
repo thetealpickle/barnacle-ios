@@ -1,14 +1,9 @@
-//
-//  ViewController.swift
-//  barnacle
-//
-//  Created by bald on 2/10/18.
+//  Created by Jessica Joseph on 2/10/18.
 //  Copyright © 2018 B0RN BKLYN Inc. All rights reserved.
-//
 
-import UIKit
 import AVFoundation
 import CoreML
+import UIKit
 import Vision
 
 enum FlashState {
@@ -18,19 +13,19 @@ enum FlashState {
 
 class CameraVC: UIViewController {
 
-    var captureSession: AVCaptureSession!
     var cameraOutput: AVCapturePhotoOutput!
+    var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     
-    var photoData: Data?
     var flashControlState: FlashState = .off
+    var photoData: Data?
     var speechSynthesizer = AVSpeechSynthesizer()
     
+    @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var capturedImageView: RoundedImageView!
+    @IBOutlet weak var confidenceLabel: UILabel!
     @IBOutlet weak var flashButton: RoundedShadowButton!
     @IBOutlet weak var identificationLabel: UILabel!
-    @IBOutlet weak var confidenceLabel: UILabel!
-    @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var roundedLabelView: RoundedShadowView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
@@ -90,12 +85,12 @@ class CameraVC: UIViewController {
         
         let settings = AVCapturePhotoSettings()
         
-        // previewPixelType and format changes in xcode 9 beta 4
-        // to refactor for beta 4, remove following two lines
+        // Xcode 9 beta 4 REFACTOR NOTES
+        // remove following two lines
         let previewPixelType = settings.availablePreviewPhotoPixelFormatTypes.first!
         let previewFormat = [kCVPixelBufferPixelFormatTypeKey as String: previewPixelType, kCVPixelBufferWidthKey as String: 160, kCVPixelBufferHeightKey as String: 160]
         
-        // refactor continue, change the value of the following line
+        // REFACTOR NOTES CONT.
         // settings.previewPhotoFormat = settings.embeddedThumbnailPhotoFormat
         settings.previewPhotoFormat = previewFormat
         
@@ -149,7 +144,6 @@ class CameraVC: UIViewController {
             flashControlState = .off
         }
     }
-    
 }
 
 extension CameraVC: AVCapturePhotoCaptureDelegate {
@@ -177,6 +171,7 @@ extension CameraVC: AVCapturePhotoCaptureDelegate {
 }
 
 extension CameraVC: AVSpeechSynthesizerDelegate {
+    
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
         self.cameraView.isUserInteractionEnabled = true
         self.spinner.isHidden = true
